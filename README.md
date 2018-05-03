@@ -29,6 +29,21 @@ Elemental Accordion Block will add the following Element to your site:
 
 * Accordion (collapsable panels)
 
+## Screen Shots
+
+#### Front End sample of an Accordion
+![Front End sample of an Accordion](./readme-images/accordion-sample.jpg)
+
+#### CMS - Accordion Main Tab
+![Accordion Main Tab](./readme-images/accordion-cms-block.jpg)
+
+#### CMS - Accordion Panel List
+![CMS - Accordion Panel List](./readme-images/accordion-cms-list.jpg)
+
+#### CMS - Accordion Panel Edit
+![CMS - Accordion Panel Edit](./readme-images/accordion-cms-panel.jpg)
+
+
 ## Getting more elements
 
 See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
