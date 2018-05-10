@@ -25,9 +25,7 @@ Additional elements for the [SilverStripe Elemental](https://github.com/dnadesig
 
 ## Usage
 
-Elemental Accordion Block will add the following Element to your site:
-
-* Accordion (collapsable panels)
+A block that allows you to create collaspible content blocks. 
 
 ## Screen Shots
 
