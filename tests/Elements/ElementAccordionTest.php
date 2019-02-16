@@ -32,7 +32,12 @@ class ElementAccordionTest extends SapphireTest
     public function testGetSummary()
     {
         $object = $this->objFromFixture(ElementAccordion::class, 'one');
-        $this->assertEquals($object->getSummary(), _t(AccordionPanel::class . 'PLURALNAME'));
+        $count = $object->Panels()->count();
+        $this->assertEquals($object->getSummary(), _t(
+            AccordionPanel::class . 'PLURALS',
+            '{count} Accordion Panel|{count} Accordion Panels',
+            [ 'count' => $count ]
+        ));
     }
 
     /**
