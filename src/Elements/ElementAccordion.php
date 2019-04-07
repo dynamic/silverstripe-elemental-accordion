@@ -79,6 +79,11 @@ class ElementAccordion extends BaseElement
             ));
 
             $fields->dataFieldByName('Content')
+                ->setTitle(_t(__CLASS__.'.ContentLabel', 'Description'))
+                ->setDescription(_t(
+                    __CLASS__.'.ContentDescription',
+                    'optional. Add introductory copy to your accordion.'
+                ))
                 ->setRows(8);
 
             if ($this->ID) {
