@@ -54,7 +54,7 @@ class ElementAccordion extends BaseElement
     ];
 
     /**
-     * @var bool 
+     * @var bool
      */
     private static $inline_editable = false;
 
