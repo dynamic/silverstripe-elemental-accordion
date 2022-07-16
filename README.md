@@ -2,10 +2,7 @@
 
 A block that displays content in collapsable panels.
 
-[![Build Status](https://travis-ci.org/dynamic/silverstripe-elemental-accordion.svg?branch=master)](https://travis-ci.org/dynamic/silverstripe-elemental-accordion)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-accordion/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-accordion/?branch=master)
-[![Code Coverage](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-accordion/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-accordion/?branch=master)
-[![Build Status](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-accordion/badges/build.png?b=master)](https://scrutinizer-ci.com/g/dynamic/silverstripe-elemental-accordion/build-status/master)
+![CI](https://github.com/dynamic/silverstripe-elemental-accordion/workflows/CI/badge.svg)
 [![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-accordion/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-accordion)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-accordion/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-accordion)
@@ -15,9 +12,9 @@ A block that displays content in collapsable panels.
 
 ## Requirements
 
-* dnadesign/silverstripe-elemental: ^4@dev
-* sheadawson/silverstripe-linkable: ^2@dev
-* symbiote/silverstripe-gridfieldextensions: ^3.1@dev
+* dnadesign/silverstripe-elemental: ^4.8
+* dynamic/silverstripe-elemental-baseobject: ^2.0
+* symbiote/silverstripe-gridfieldextensions: ^3.1
 
 ## Installation
 
@@ -70,17 +67,17 @@ translating!
  *  [Dynamic](http://www.dynamicagency.com) (<dev@dynamicagency.com>)
 
 ## Bugtracker
-Bugs are tracked in the issues section of this repository. Before submitting an issue please read over 
-existing issues to ensure yours is unique. 
- 
+Bugs are tracked in the issues section of this repository. Before submitting an issue please read over
+existing issues to ensure yours is unique.
+
 If the issue does look like a new bug:
- 
+
  - Create a new issue
- - Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots 
+ - Describe the steps required to reproduce your issue, and the expected outcome. Unit tests, screenshots
  and screencasts can help here.
- - Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version, 
+ - Describe your environment as detailed as possible: SilverStripe version, Browser, PHP version,
  Operating System, any installed SilverStripe modules.
- 
+
 Please report security issues to the module maintainers directly. Please don't file security issues in the bugtracker.
 
 ## Development and contribution
