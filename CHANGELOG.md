@@ -1,5 +1,12 @@
 # Changelog
 
+## [2.2.0](https://github.com/dynamic/silverstripe-elemental-accordion/tree/2.2.0) (2022-07-15)
+
+## What's Changed
+* REFACTOR PHP8 and PHPUNIT 9 compatibility by @jsirish in https://github.com/dynamic/silverstripe-elemental-accordion/pull/39
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-accordion/compare/2.1.0...2.2.0
+
 ## [2.1.0](https://github.com/dynamic/silverstripe-elemental-accordion/tree/2.1.0) (2020-01-08)
 
 [Full Changelog](https://github.com/dynamic/silverstripe-elemental-accordion/compare/2.0.3...2.1.0)
