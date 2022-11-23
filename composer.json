@@ -1,11 +1,15 @@
 {
     "name": "dynamic/silverstripe-elemental-accordion",
-    "type": "silverstripe-vendormodule",
     "description": "Display content in collapsable panels",
-    "keywords": [
-        "silverstripe", "elemental", "blocks", "accordion", "panels"
-    ],
     "license": "BSD-3-Clause",
+    "type": "silverstripe-vendormodule",
+    "keywords": [
+        "silverstripe",
+        "elemental",
+        "blocks",
+        "accordion",
+        "panels"
+    ],
     "authors": [
         {
             "name": "Dynamic",
@@ -15,12 +19,19 @@
     ],
     "require": {
         "dnadesign/silverstripe-elemental": "^4.8",
-        "dynamic/silverstripe-elemental-baseobject": "^2.0",
+        "dynamic/silverstripe-elemental-baseobject": "^3.0",
         "symbiote/silverstripe-gridfieldextensions": "^3.1"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2",
-        "squizlabs/php_codesniffer": "^3.0"
+        "silverstripe/recipe-testing": "^2"
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Dynamic\\Elements\\Accordion\\": "src/",
+            "Dynamic\\Elements\\Accordion\\Tests\\": "tests/"
+        }
     },
     "config": {
         "allow-plugins": {
@@ -34,19 +45,8 @@
         "expose": [
             "thirdparty",
             "client/dist"
-        ],
-        "branch-alias": {
-            "dev-master": "2.x-dev"
-        }
+        ]
     },
-    "autoload": {
-        "psr-4": {
-            "Dynamic\\Elements\\Accordion\\": "src/",
-            "Dynamic\\Elements\\Accordion\\Tests\\": "tests/"
-        }
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true,
     "scripts": {
         "lint": "vendor/bin/phpcs src/ tests/",
         "lint-clean": "vendor/bin/phpcbf src/ tests/"

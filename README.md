@@ -13,7 +13,7 @@ A block that displays content in collapsable panels.
 ## Requirements
 
 * dnadesign/silverstripe-elemental: ^4.8
-* dynamic/silverstripe-elemental-baseobject: ^2.0
+* dynamic/silverstripe-elemental-baseobject: ^3.0
 * symbiote/silverstripe-gridfieldextensions: ^3.1
 
 ## Installation
@@ -23,6 +23,22 @@ A block that displays content in collapsable panels.
 ## License
 
 See [License](license.md)
+
+## Upgrading from version 2
+
+Elemental Accordion drops `sheadawson/silverstripe-linkable` usage in favor of `gorriecoe/silverstripe-linkfield`. To avoid data loss, install the `dynamic/silverstripe-link-migrator` module as follows:
+
+```markdown
+composer require dynamic/silverstripe-link-migrator
+```
+
+Then, run the task "Linkable to SilverStripe Link Migration" via `/dev/tasks`, or cli via:
+```markdown
+vendor/bin/sake dev/tasks/LinkableMigrationTask
+```
+
+This will populate all of the new Link fields with data from the old class.
+
 
 ## Usage
 
@@ -36,21 +52,21 @@ The default templates are based off the [jQuery UI Accordion](https://jqueryui.c
 ## Screen Shots
 
 #### Front End sample of an Accordion
-![Front End sample of an Accordion](./images/readme/accordion-sample.jpg)
+![Front End sample of an Accordion](./docs/en/_images/accordion-sample.jpg)
 
 #### CMS - Accordion Main Tab
-![Accordion Main Tab](./images/readme/accordion-cms-block.jpg)
+![Accordion Main Tab](./docs/en/_images/accordion-cms-block.jpg)
 
 #### CMS - Accordion Panel List
-![CMS - Accordion Panel List](./images/readme/accordion-cms-list.jpg)
+![CMS - Accordion Panel List](./docs/en/_images/accordion-cms-list.jpg)
 
 #### CMS - Accordion Panel Edit
-![CMS - Accordion Panel Edit](./images/readme/accordion-cms-panel.jpg)
+![CMS - Accordion Panel Edit](./docs/en/_images/accordion-cms-panel.jpg)
 
 
 ## Getting more elements
 
-See [Elemental modules by Dynamic](https://github.com/dynamic/silverstripe-elemental-blocks#included-blocks)
+See [Elemental modules by Dynamic](https://github.com/orgs/dynamic/repositories?q=elemental&type=all&language=&sort=)
 
 ## Configuration
 
