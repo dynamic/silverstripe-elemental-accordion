@@ -1,5 +1,10 @@
 # Changelog
 
+## [3.0.0-alpha1](https://github.com/dynamic/silverstripe-elemental-accordion/tree/3.0.0-alpha1) (2022-11-23)
+* REFACTOR require Elemental BaseObject 3 by @jsirish in https://github.com/dynamic/silverstripe-elemental-accordion/pull/40
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-accordion/compare/2.2.0...3.0.0-alpha1
+
 ## [2.2.0](https://github.com/dynamic/silverstripe-elemental-accordion/tree/2.2.0) (2022-07-15)
 
 ## What's Changed
