@@ -45,7 +45,7 @@ A block that allows you to create collapsible content blocks.
 
 ### Template Notes
 
-The default templates are based off the [jQuery UI Accordion](https://jqueryui.com/accordion/) classes/styling
+The default templates are based off [Bootstrap 4](https://getbootstrap.com/) cards and collapse.
 
 ## Screen Shots
 
