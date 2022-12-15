@@ -45,7 +45,7 @@ A block that allows you to create collapsible content blocks.
 
 ### Template Notes
 
-The default templates are based off [Bootstrap 4](https://getbootstrap.com/) cards and collapse.
+The default templates are based off [Bootstrap 4](https://getbootstrap.com/) cards and collapse. If a theme is not using bootstrap, panel functionality will need to be implemented based on the theme’s UX options or via third party scripts such as jQuery UI.
 
 ## Screen Shots
 
