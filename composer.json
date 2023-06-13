@@ -26,7 +26,7 @@
         "symbiote/silverstripe-gridfieldextensions": "^4"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^2"
+        "silverstripe/recipe-testing": "^3"
     },
     "repositories": [
         {
