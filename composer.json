@@ -41,12 +41,6 @@
         },
         "process-timeout": 600
     },
-    "extra": {
-        "expose": [
-            "thirdparty",
-            "client/dist"
-        ]
-    },
     "scripts": {
         "lint": "vendor/bin/phpcs src/ tests/",
         "lint-clean": "vendor/bin/phpcbf src/ tests/"
