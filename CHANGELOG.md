@@ -1,6 +1,13 @@
 # Changelog
 
+## [4.0.0-beta1](https://github.com/dynamic/silverstripe-elemental-accordion/tree/4.0.0-beta1) (2023-06-29)
+
+* REFACTOR Silverstripe Link cleanup by @jsirish in https://github.com/dynamic/silverstripe-elemental-accordion/pull/44
+
+**Full Changelog**: https://github.com/dynamic/silverstripe-elemental-accordion/compare/4.0.0-alpha1...4.0.0-beta1
+
 ## [4.0.0-alpha1](https://github.com/dynamic/silverstripe-elemental-accordion/tree/4.0.0-alpha1) (2023-06-12)
+
 * REFACTOR migrate to new workflow, README cleanup by @jsirish in https://github.com/dynamic/silverstripe-elemental-accordion/pull/41
 * FEATURE default bootstrap template by @jsirish in https://github.com/dynamic/silverstripe-elemental-accordion/pull/42
 * REFACTOR Elemental 5 by @jsirish in https://github.com/dynamic/silverstripe-elemental-accordion/pull/43
