@@ -15,7 +15,7 @@
                         <div class="row">
                             <% if $Image %>
                                 <div class="col-md-5 img-side">
-                                    <img src="$Image.FocusFill(520,420).URL" class="img-fluid" alt="$Image.Title.ATT">
+                                    <img src="$Image.Fill(520,420).URL" class="img-fluid" alt="$Image.Title.ATT">
                                 </div>
                                 <div class="col-md-7">
                             <% else %>
