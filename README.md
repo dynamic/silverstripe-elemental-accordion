@@ -25,9 +25,9 @@ A block that displays content in collapsable panels.
 
 See [License](LICENSE.md)
 
-## Upgrading from version 2
+## Upgrading from version 4
 
-Elemental Accordion drops `gorriecoe/silverstripe-linkfield` usage in favor of `silverstripe/linkfield`.
+This module drops `gorriecoe/silverstripe-linkfield` usage in favor of `silverstripe/linkfield`.
 
 ## Usage
 
