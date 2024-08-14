@@ -13,7 +13,8 @@ A block that displays content in collapsable panels.
 ## Requirements
 
 * dnadesign/silverstripe-elemental: ^5
-* dynamic/silverstripe-elemental-baseobject: ^4
+* dynamic/silverstripe-elemental-baseobject: ^5
+* jonom/focuspoint: ^5
 * symbiote/silverstripe-gridfieldextensions: ^4
 
 ## Installation
@@ -26,18 +27,7 @@ See [License](LICENSE.md)
 
 ## Upgrading from version 2
 
-Elemental Accordion drops `sheadawson/silverstripe-linkable` usage in favor of `gorriecoe/silverstripe-linkfield`. To avoid data loss, install the `dynamic/silverstripe-link-migrator` module as follows:
-
-```markdown
-composer require dynamic/silverstripe-link-migrator
-```
-
-Then, run the task "Linkable to SilverStripe Link Migration" via `/dev/tasks`, or cli via:
-```markdown
-vendor/bin/sake dev/tasks/LinkableMigrationTask
-```
-
-This will populate all of the new Link fields with data from the old class.
+Elemental Accordion drops `gorriecoe/silverstripe-linkfield` usage in favor of `silverstripe/linkfield`.
 
 ## Usage
 
