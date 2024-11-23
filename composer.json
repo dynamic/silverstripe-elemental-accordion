@@ -32,6 +32,16 @@
         "phpstan/extension-installer": "^1.3",
         "silverstripe/frameworktest": "^2"
     },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:muskie9/silverstripe-elemental-baseobject.git"
+        },
+        {
+            "type": "vcs",
+            "url": "git@github.com:muskie9/silverstripe-focuspoint.git"
+        }
+    ],
     "minimum-stability": "dev",
     "prefer-stable": true,
     "autoload": {
