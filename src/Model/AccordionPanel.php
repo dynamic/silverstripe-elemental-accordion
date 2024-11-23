@@ -5,9 +5,13 @@ namespace Dynamic\Elements\Accordion\Model;
 use DNADesign\Elemental\Forms\TextCheckboxGroupField;
 use Dynamic\BaseObject\Model\BaseElementObject;
 use Dynamic\Elements\Accordion\Elements\ElementAccordion;
+use Exception;
+use Psr\Container\NotFoundExceptionInterface;
 use Sheadawson\Linkable\Forms\LinkField;
 use Sheadawson\Linkable\Models\Link;
 use SilverStripe\Assets\Image;
+use SilverStripe\CMS\Model\SiteTree;
+use SilverStripe\Core\Validation\ValidationException;
 use SilverStripe\Forms\CheckboxField;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\TextField;
@@ -29,40 +33,41 @@ class AccordionPanel extends BaseElementObject
     /**
      * @var array
      */
-    private static $db = [
+    private static array $db = [
         'Sort' => 'Int',
     ];
 
     /**
      * @var array
      */
-    private static $has_one = [
+    private static array $has_one = [
         'Accordion' => ElementAccordion::class,
     ];
 
     /**
-     * @var array Show the panel $Title by default
+     * Show the panel $Title by default
+     *
+     * @var array
      */
-    private static $defaults = [
+    private static array $defaults = [
         'ShowTitle' => true,
     ];
 
     /**
      * @var string
      */
-    private static $default_sort = 'Sort';
+    private static string $default_sort = 'Sort';
 
     /**
      * @var string Database table name, default's to the fully qualified name
      */
-    private static $table_name = 'AccordionPanel';
+    private static string $table_name = 'AccordionPanel';
 
     /**
      * @return FieldList
-     *
-     * @throws \Exception
+     * @throws Exception
      */
-    public function getCMSFields()
+    public function getCMSFields(): FieldList
     {
         $this->beforeUpdateCMSFields(function ($fields) {
             /** @var FieldList $fields */
@@ -79,9 +84,11 @@ class AccordionPanel extends BaseElementObject
     }
 
     /**
-     * @return null
+     * @return SiteTree|DataObject|null
+     * @throws NotFoundExceptionInterface
+     * @throws ValidationException
      */
-    public function getPage()
+    public function getPage(): DataObject|SiteTree|null
     {
         $page = null;
 
