@@ -4,6 +4,7 @@ namespace Dynamic\Elements\Accordion\Elements;
 
 use DNADesign\Elemental\Models\BaseElement;
 use Dynamic\Elements\Accordion\Model\AccordionPanel;
+use SilverStripe\Core\Validation\ValidationException;
 use SilverStripe\Forms\FieldList;
 use SilverStripe\Forms\GridField\GridField;
 use SilverStripe\Forms\GridField\GridFieldAddExistingAutocompleter;
@@ -25,48 +26,48 @@ class ElementAccordion extends BaseElement
     /**
      * @var string
      */
-    private static $icon = 'font-icon-block-content';
+    private static string $icon = 'font-icon-block-content';
 
     /**
      * @var string
      */
-    private static $table_name = 'ElementAccordion';
+    private static string $table_name = 'ElementAccordion';
 
     /**
      * @var array
      */
-    private static $db = [
+    private static array $db = [
         'Content' => 'HTMLText',
     ];
 
     /**
      * @var array
      */
-    private static $has_many = array(
+    private static array $has_many = [
         'Panels' => AccordionPanel::class,
-    );
+    ];
 
     /**
      * @var array
      */
-    private static $owns = [
+    private static array $owns = [
         'Panels',
     ];
 
     /**
      * @var bool
      */
-    private static $inline_editable = false;
+    private static bool $inline_editable = false;
 
     /**
      * @param bool $includerelations
      * @return array
      */
-    public function fieldLabels($includerelations = true)
+    public function fieldLabels($includerelations = true): array
     {
         $labels = parent::fieldLabels($includerelations);
 
-        $labels['Content'] = _t(__CLASS__.'.ContentLabel', 'Intro');
+        $labels['Content'] = _t(__CLASS__ . '.ContentLabel', 'Intro');
         $labels['Panels'] = _t(__CLASS__ . '.PanelsLabel', 'Panels');
 
         return $labels;
@@ -75,17 +76,17 @@ class ElementAccordion extends BaseElement
     /**
      * @return FieldList
      */
-    public function getCMSFields()
+    public function getCMSFields(): FieldList
     {
         $this->beforeUpdateCMSFields(function ($fields) {
             /* @var FieldList $fields */
-            $fields->removeByName(array(
+            $fields->removeByName([
                 'Sort',
-            ));
+            ]);
 
             $fields->dataFieldByName('Content')
                 ->setDescription(_t(
-                    __CLASS__.'.ContentDescription',
+                    __CLASS__ . '.ContentDescription',
                     'optional. Add introductory copy to your accordion.'
                 ))
                 ->setRows(5);
@@ -112,21 +113,22 @@ class ElementAccordion extends BaseElement
     /**
      * @return DBHTMLText
      */
-    public function getSummary()
+    public function getSummary(): DBHTMLText
     {
         $count = $this->Panels()->count();
         $label = _t(
             AccordionPanel::class . '.PLURALS',
             '{count} Accordion Panel|{count} Accordion Panels',
-            [ 'count' => $count ]
+            ['count' => $count]
         );
         return DBField::create_field('HTMLText', $label)->Summary(20);
     }
 
     /**
      * @return array
+     * @throws ValidationException
      */
-    protected function provideBlockSchema()
+    protected function provideBlockSchema(): array
     {
         $blockSchema = parent::provideBlockSchema();
         $blockSchema['content'] = $this->getSummary();
@@ -136,8 +138,8 @@ class ElementAccordion extends BaseElement
     /**
      * @return string
      */
-    public function getType()
+    public function getType(): string
     {
-        return _t(__CLASS__.'.BlockType', 'Accordion');
+        return _t(__CLASS__ . '.BlockType', 'Accordion');
     }
 }

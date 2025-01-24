@@ -6,7 +6,7 @@
         <% loop $Panels %>
             <div class="accordion-item">
                 <h2 class="accordion-header">
-                <button class="accordion-button<% if not $IsFirst %> collapsed<% end_if %>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{$ID}" aria-expanded="<% if $IsFirst %>true<% else %>false<%end_if %>" aria-controls="collapse-{$ID}">
+                    <button class="accordion-button<% if not $IsFirst %> collapsed<% end_if %>" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-{$ID}" aria-expanded="<% if $IsFirst %>true<% else %>false<%end_if %>" aria-controls="collapse-{$ID}">
                         $Title
                     </button>
                 </h2>
@@ -17,13 +17,11 @@
                                 <div class="col-md-5 img-side">
                                     <img src="$Image.FocusFill(520,420).URL" class="img-fluid" alt="$Image.Title.ATT">
                                 </div>
-                                <div class="col-md-7">
-                            <% else %>
-                                <div class="col-md-12">
                             <% end_if %>
-                                    $Content
-                                    <% if $ElementLink %>$ElementLink<% end_if %>
-                                </div>
+                            <div class="<% if $Image %>col-md-7<% else %>>col-md-12<% end_if %>">
+                                $Content
+                                <% with $ElementLink %><a href="$URL"<% if $OpenInNew %> target="_blank" rel="nofollow"<% end_if %>>$Title</a><% end_with %>
+                            </div>
                         </div>
                     </div>
                 </div>
