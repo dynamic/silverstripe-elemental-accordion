@@ -27,6 +27,7 @@
         "dnadesign/silverstripe-elemental": "^5",
         "dynamic/silverstripe-elemental-baseobject": "^5",
         "jonom/focuspoint": "^5.0",
+        "silverstripe/graphql": "^5.0",
         "symbiote/silverstripe-gridfieldextensions": "^4"
     },
     "require-dev": {
@@ -51,5 +52,11 @@
     "scripts": {
         "lint": "vendor/bin/phpcs src/ tests/",
         "lint-clean": "vendor/bin/phpcbf src/ tests/"
+    },
+    "extra": {
+        "project-files-installed": [
+            "behat.yml",
+            "phpunit.xml.dist"
+        ]
     }
 }
