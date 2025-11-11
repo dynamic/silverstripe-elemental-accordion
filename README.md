@@ -1,11 +1,9 @@
 # SilverStripe Elemental Accordion Block
 
-[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
-
 A block that displays content in collapsable panels.
 
 ![CI](https://github.com/dynamic/silverstripe-elemental-accordion/workflows/CI/badge.svg)
-[![codecov](https://codecov.io/gh/dynamic/silverstripe-elemental-accordion/branch/master/graph/badge.svg)](https://codecov.io/gh/dynamic/silverstripe-elemental-accordion)
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
 
 [![Latest Stable Version](https://poser.pugx.org/dynamic/silverstripe-elemental-accordion/v/stable)](https://packagist.org/packages/dynamic/silverstripe-elemental-accordion)
 [![Total Downloads](https://poser.pugx.org/dynamic/silverstripe-elemental-accordion/downloads)](https://packagist.org/packages/dynamic/silverstripe-elemental-accordion)
