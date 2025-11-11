@@ -21,6 +21,7 @@
         "dnadesign/silverstripe-elemental": "^5",
         "dynamic/silverstripe-elemental-baseobject": "^5",
         "jonom/focuspoint": "^5.0",
+        "silverstripe/graphql": "^5.0",
         "symbiote/silverstripe-gridfieldextensions": "^4"
     },
     "require-dev": {
