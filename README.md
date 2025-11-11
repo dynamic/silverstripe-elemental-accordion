@@ -1,5 +1,7 @@
 # SilverStripe Elemental Accordion Block
 
+[![Sponsors](https://img.shields.io/badge/Sponsor-Dynamic-ff69b4?logo=github-sponsors&logoColor=white)](https://github.com/sponsors/dynamic)
+
 A block that displays content in collapsable panels.
 
 ![CI](https://github.com/dynamic/silverstripe-elemental-accordion/workflows/CI/badge.svg)
