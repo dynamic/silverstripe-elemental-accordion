@@ -24,14 +24,14 @@
         }
     ],
     "require": {
-        "dnadesign/silverstripe-elemental": "^5",
-        "dynamic/silverstripe-elemental-baseobject": "^5",
-        "jonom/focuspoint": "^5.0",
-        "silverstripe/graphql": "^5.0",
-        "symbiote/silverstripe-gridfieldextensions": "^4"
+        "dnadesign/silverstripe-elemental": "^6",
+        "dynamic/silverstripe-elemental-baseobject": "^6",
+        "jonom/focuspoint": "^6.0",
+        "silverstripe/graphql": "^6.0",
+        "symbiote/silverstripe-gridfieldextensions": "^5"
     },
     "require-dev": {
-        "silverstripe/recipe-testing": "^3"
+        "silverstripe/recipe-testing": "^4"
     },
     "minimum-stability": "dev",
     "prefer-stable": true,
