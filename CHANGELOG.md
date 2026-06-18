@@ -7,7 +7,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [6.0.0] - 2024-01-01
+## [6.0.0] - 2026-06-03
 
 ### Changed
 
@@ -18,7 +18,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Requires silverstripe/graphql ^6.0
 - Requires symbiote/silverstripe-gridfieldextensions ^5
 
-## [5.0.0] - 2023-01-01
+## [5.0.0] - 2025-01-24
 
 ### Changed
 
