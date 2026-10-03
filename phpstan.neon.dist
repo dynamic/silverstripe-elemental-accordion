@@ -1,0 +1,19 @@
+parameters:
+  level: 1
+  treatPhpDocTypesAsCertain: false
+  paths:
+    - src
+  ignoreErrors:
+    # Pre-existing silverstan findings in src/, suppressed so that enabling PHPStan in
+    # CI stays a config-only change with no behaviour risk. Fix the code and remove
+    # these entries in the PR that closes dynamic/silverstripe-elemental-accordion#58.
+    -
+      message: '#^Use Symbiote\\GridFieldExtensions\\GridFieldOrderableRows::create\(\) instead of new Symbiote\\GridFieldExtensions\\GridFieldOrderableRows\(\)\.$#'
+      identifier: silverstan.injectable.useCreate
+      count: 1
+      path: src/Elements/ElementAccordion.php
+    -
+      message: '#^Accessing \$this\->Accordion\(\)\->hasMethod\(\) is potentially unsafe, as \$this\->Accordion\(\) may not exist in the database\. Call \$this\->Accordion\(\)\->exists\(\) first to verify that it is safe to access\.$#'
+      identifier: silverstan.dataObject.unsafe
+      count: 1
+      path: src/Model/AccordionPanel.php
